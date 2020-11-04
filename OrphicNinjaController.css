@@ -1,290 +1,82 @@
-/*BEGIN XBOX Controller Styling*/
-
-.controller.custom{
-    background-image: url(https://i.imgur.com/ewEEVxR.png);
-    height: 657px;
-    width: 781px;
-    background-position: 0px 0px, 00px 0px;
-    background-repeat: no-repeat, no-repeat; -webkit-animation: Callback 600s infinite;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-fill-mode: forwards ;
-}
-.custom.disconnected { /* This class shows an image when the controller is disconnected */
-    background-image: url(https://i.imgur.com/VpdDrFh.png);
-    background-position: 0px 0px, 00px 0px;
-    background-repeat:no-repeat;
-}
-/* This hides the controller's button when disconnected so only the background image remains */ 
-.custom.disconnected div {
+.controller.edit {
+    background: url(https://i.imgur.com/ewEEVxR.png);
+  }
+  
+  .edit.disconnected {
+    background: url(https://i.imgur.com/VpdDrFh.png);
+  }
+  
+  .edit .quadrant {
     display: none;
-}
- .custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
-    width: 127px;
-    height: 93px;
-    top: 0px;
-    left:10px;
+  }
+  
+  .edit .p0 {
+      display: none;
+  }
+  
+  .edit .p1 {
+      display: none;
+  }
+  
+  .edit .p2 {
+      display: none;
+  }
+  
+  .edit .p3 {
+      display: none;
+  }
+  
+  .edit .back, .edit .start {
+      background: url(https://i.imgur.com/C1V4Tbn.png);
+      width: 33px;
+      height: 33px;
+      opacity: 0;
+  }
+  
+  .edit .back.pressed, .edit .start.pressed {
+      opacity: 1;
+  }
+  
+  .edit .back {
+      float: left;
+  }
+  
+  .edit .start {
+      background-position: 33px 0px;
+      float: right;
+  }
+  
+  .edit .button {
     position: absolute;
-    background-repeat:no-repeat;
-} 
-.custom .trigger{/* These are the actual triggers themselves */
-    width: 200px;
-    height: 127px;
-    background-image: url(https://i.imgur.com/qbkUziP.png);
-    background-repeat:no-repeat;
-}
-.custom .trigger.left{ 
-    float: left;
-    left:147px;
-    background-position-x: 0px;
-    position: absolute;
-}
-.custom .trigger.right{
-    float: right;
-    width: 200px;
-    height: 127px;
-    top: 0px;
-    left:413px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position-x: -1px;
-    position: absolute;
-}
-.custom .bumper{
-    width: 208px;
-    height: 333px;
-    left: 110px;
-    top: 133px;
-    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='bumper_xA0_Image_1_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='178px' height='66px' viewBox='0 0 178 66' style='enable-background:new 0 0 178 66;' xml:space='preserve'%3E%3Cimage style='overflow:visible;' width='178' height='66' id='bumper_xA0_Image' xlink:href='data:image/png;base64,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'%3E%3C/image%3E%3C/svg%3E%0A");
-    opacity: 0;
-    background-repeat:no-repeat;
-    position: absolute;
-}
-.custom .bumper.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
-    opacity: 1;
-}
-.custom .bumper.right{
-     -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    float: left;
-    left: 462px;
-    top: 133px;
-}
-.custom .bumper.left{
-    float: right;
-}
-/* This is to size and position the containing div for the 
-start and select buttons. */
-.custom .arrows{
-    position: absolute;
-    width: 205px;
-    height: 19px;
-    top: 250px;
-    left: 291px;
-    background-repeat:no-repeat;
-}
-/* Setting the size and CSS sprite for the start adn select buttons */
-.custom .back, .custom .start{
-    background-image: url();
-    width: 30px;
-    height: 19px;
-    background-repeat:no-repeat;
-}
-.custom .back.pressed{
-    /*background-position-y: -1px;*/
-    top: 25px;
-    left: 27px;
-    width: 35px;
-    opacity: 1;
-}
-.custom .start.pressed{
-    top: 25px;
-    left: 140px;
-    width: 35px;
-    opacity: 1;
-    background-position-x: -36px;
-}
-.custom .back{ /* share */
-    position: absolute;
-    top: -101px;
-    left: -55px;
-    float: left;
-    width: 38px;
-    height: 50px;
-    opacity: 0;
-}
-.custom .start{ /* options */
-    position: absolute;
-    top: -101px;
-    left: 283px;
-    float: right;
-    width: 38px;
-    height: 50px;
-    opacity: 0;
-    background-position: px 0;
-}
-/* Positioning and size of the container for the face buttons */
-.custom .abxy{
-    position: absolute;
-    width: 400px;
-    height: 260px;
-    top: 150px;
-    left: 570px;
-    background-repeat:no-repeat;
-}
-/* base class used to simplify the sprite mapping */
-.custom .button{
-    position: absolute;
-    width:52px;
-    height:52px;
-    background-image: url(https://i.imgur.com/jjewC01.png);
-}
-.custom .button.pressed{
-    background-position-y: -53px;
-    width: 52px;
-    height: 52px;
-    margin-top: 5px;
-}
-.custom .a{ 
-    background-position: 0px 0px;
-    top: 162px;
-    left: -07px;
-    background-repeat:no-repeat;
-}
-.custom .b{ 
-    background-position: -52px 0px;
-    top: 109px;
-    left: 46px;
-    background-repeat:no-repeat;
-}
-.custom .x{ 
-    background-position: -104px 0px;
-    top: 109px;
-    left: -59px;
-    background-repeat:no-repeat;
-}
-.custom .y{ 
-    background-position: -156px 0px;
-    top: 58px;
-    left: -7px;
-    background-repeat:no-repeat;
-}
-.custom .sticks{
-    position: absolute;
-    width: 310px;
-    height: 100px;
-    top: 374px;
-    left: 240px;
-    background-repeat:no-repeat;
-}
-.custom .stick{
-    position: absolute;
-    background-image: url(https://i.imgur.com/hBGZrh5.png);
-    height:88px;
-    width: 88px;
-    background-repeat:no-repeat;
-}
-.custom .stick.pressed.left{
-    background-position-x: -88px;
-}
-.custom .stick.pressed.right{
-    background-position-x: -88px;
-}
-.custom .stick.left{
-    top: -124px;
-    left: -91px;
-}
-.custom .stick.right{
-    top: calc(100% - 105px);
-    left: calc(100% - 100px);
-}
-/* Dpad possitioning and sizing */
-.custom .dpad{
-    position: absolute;
-    width: 74px;
-    height: 133px;
-    top: 359px;
-    left: 220px;
-}
-.custom .face{
-    background-image: url();
-    position: absolute;
-    opacity: 0;
-}
-.custom .face.up{
-    width: 38px;
-    height: 59px;
-    left: 51px;
-    top:1px;
-    background-position: -38px 0px;
-    background-repeat:no-repeat;
-}
-.custom .face.down{
-    width: 38px;
-    height: 59px;
-    left: 52px;
-    top: 59px;
-    background-position: 0px 0px;
-    background-repeat:no-repeat;
-}
-.custom .face.left{
-    width: 59px;
-    height: 38px;
-    top: 39px;
-    left: 11px;
-    background-position: 0px -96px;
-    background-repeat:no-repeat;
-}
-.custom .face.right{
-    width: 59px;
-    height: 38px;
-    top: 39px;
-    left: 69px;
-    background-position: 0px -58px;
-    background-repeat:no-repeat;
-}
-.custom .face.right.pressed{
-    width: 59px;
-    height: 38px;
-    top: 39px;
-    left: 69px;
-    opacity:1;
-    background-position: 0px -58px;
-    background-repeat:no-repeat;
-}
-.custom .face.left.pressed{
-    width: 59px;
-    height: 38px;
-    top: 39px;
-    left: 11px;
-    opacity: 1;
-    background-position: 0px -96px;
-    background-repeat:no-repeat;
-}
-.custom .face.up.pressed{
-    width: 38px;
-    height: 59px;
-    left: 51px;
-    top:1px;
-    background-position: -38px 0px;
-    opacity: 1;
-}
-.custom .face.down.pressed{ 
-    width: 38px;
-    height: 59px;
-    left: 51px;
-    top: 59px;
-    opacity: 1;
-    background-position: 0px 0px;
-    background-repeat:no-repeat;
-}
-.custom .trigger-button.left{
-    left: 600px;
-    top: 77px;
-    background-position: 0px 0px;
-    background-repeat:no-repeat; 
-}
-.custom .p0, .custom .p1, .custom .p2, .custom .p3{ 
-    opacity: 1;
-    height: 657px;
-    width: 781px;
-}
+    background: url(https://i.imgur.com/mqoBBs6.png);
+  }
+  
+  .edit .button.pressed {
+      background-position-y: -48px;
+      margin-top: 5px;
+      opacity: 1;
+  }
+  
+  .edit .a {
+      background-position: 0 0;
+      top: 108px;
+      left: 55px;
+  }
+  
+  .edit .b {
+      background-position: -49px 0;
+      top: 57px;
+      right: 3px;
+  }
+  
+  .edit .x {
+      background-position: -98px 0;
+      top: 57px;
+      left: 4px;
+  }
+  
+  .edit .y {
+      background-position: 48px 0;
+      left: 55px;
+      top: 5px;
+  }
