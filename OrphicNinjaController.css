@@ -1,9 +1,9 @@
 .controller.edit {
-    background: url(https://i.imgur.com/ewEEVxR.png);
+    background-image: url(https://i.imgur.com/ewEEVxR.png);
   }
   
   .edit.disconnected {
-    background: url(https://i.imgur.com/VpdDrFh.png);
+    background-image: url(https://i.imgur.com/VpdDrFh.png);
   }
   
   .edit .quadrant {
@@ -27,7 +27,7 @@
   }
   
   .edit .back, .edit .start {
-      background: url(https://i.imgur.com/C1V4Tbn.png);
+      background-image: url(https://i.imgur.com/C1V4Tbn.png);
       width: 33px;
       height: 33px;
       opacity: 0;
@@ -48,7 +48,7 @@
   
   .edit .button {
     position: absolute;
-    background: url(https://i.imgur.com/mqoBBs6.png);
+    background-image: url(https://i.imgur.com/mqoBBs6.png);
   }
   
   .edit .button.pressed {
