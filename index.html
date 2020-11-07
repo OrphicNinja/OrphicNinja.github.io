@@ -1,7 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/site.webmanifest">
+    <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#ff34e8">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nadeem Wali (Orphic Ninja)</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/54edcdb169.js" crossorigin="anonymous"></script>
+</head>
 <body>
-<h1>Orphic Ninja</h1>
-<p>Custom gamepad viewer skin :)</p>
+    <header>
+        <div class="logo" id="on-top">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="menu-toggler" id="on-top">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top-nav" id="on-top">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landing-text">
+            <h1>Nadeem Wali</h1>
+            <h6>Twitch Streamer and Beginner Programmer</h6>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <!--
+                <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+                <img src="images/profile.jpeg" alt="profile image">
+                </div>
+            -->
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+                <p>
+                    My name is Nadeem Wali, or OrphicNinja on Twitch and other social media. I am <span id="age"></span> years old and I spend my time playing games and teaching myself different coding languages. Currently, i'm addicted to <a href="https://www.roguecompany.com/">Rogue Company</a> and spend my other time working on my HTML, CSS and JavaScript skills.
+                </p>
+                <span id="age"></span>
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="https://www.facebook.com/nadeem2001wali" class="icon-link">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Orphic_Ninja" class="icon-link">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCayPIvgzNvYRp7jt13WqXpQ" class="icon-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitch.tv/orphicninja" class="icon-link">
+                                <i class="fab fa-twitch"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <h1>What I Do</h1>
+            </div>
+            <div class="my-skills">
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                    <div class="icon-container" >
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h1>Content creation and Gaming</h1>
+                    <p>
+                        Primarily, I am a gamer. Growing up playing many video games, I naturally transitioned into attempting to 100% games and collect as many Platinum Trophies 
+                        as I can. My platinum journey started on the 5th of July, 2020, when I recorded and uploaded my first platinum trophy playthrough (of Back to the Future: 
+                        The Game) on YouTube. Since then I have continued to 100% more games and have transitioned to streaming those playthroughs along with other fun games I play 
+                        on Twitch. As mentioned above I play competative shooters like Rogue Company and battle royales, along with other games like Fall Guys and Among Us.
+                        <br><br>
+                        You can add me on:
+                        <br>
+                        PSN - OrphicNinja
+                        <br>
+                        Steam - Twitch.tv/orphicninja
+                        <br>
+                        Epic Games - OrphicNinjaTTV
+
+                        <br><br>
+                        <a href="https://psnprofiles.com/OrphicNinja"><img src="https://card.psnprofiles.com/2/OrphicNinja.png" ></a>
+                    </p>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h1>Programming</h1>
+                    <p>
+                        Currently I have learned the basics to C#, HTML, CSS, JAVA and JavaScript, and will be able to create basic command line programs and very basic window 
+                        applications. I first started learning C# at a computer science course in college and used the skills to start developing Unity games. I then went on to teach 
+                        myself HTML, CSS and JavaScript using the internet. My main drive for learning these three languages was to have the ability to understand how websites work
+                        and to be able to eventually learn how to write my own pages and create a site to showcase my skills (ironically it's this one 🙂). My goal after learning the
+                        basics of JAVA is to learn the basics of Python then move on to more advanced C#/C++ code. Here is some footage of my first ever Unity project:
+                        <br><br>
+                        <iframe width="560" height="316" src="https://www.youtube.com/embed/S7nZ-nbEsrc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Things I've Made</h1>
+                <h6>View some of my recent work</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                    <img src="images/portitem1.png" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                    <h6>Programming</h6>
+                    <h1>Custom Gamepad Viewer Skin</h1>
+                    <p>
+                        I used my CSS and Photoshopping skills to make a professional looking controller skin to be used on 
+                        <a href="http://gamepadviewer.com" target="_blank" rel="noopener noreferrer" class="link">GamePadViewer.com</a>
+                        <br>
+                        GamePadViewer is a web-based tool used for representing gamepad input visually. You basically get to see what you're doing with your gamepad on screen.
+                        Usually, people would use a tool like this for showing their controller input on screen for a stream or recorded video. Which is exactly what I use it for.
+                        If you are interested in purchasing a custom controller design and/or skin for this tool, contact me using the contact feature at the bottom of the page
+                        <a href="#contact" class="link" >(or click here)</a>
+                    </p>
+                    <a href="https://gamepadviewer.com/?p=1&editcss=https://orphicninja.github.io./OrphicNinjaController.css" target="_blank" rel="noopener noreferrer" class="cta">
+                        View in GamePad Viewer
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Let's work together</h6>
+            </div>
+            <form name="Contact" data-aos="fade-up" data-aos-delay="300" netlify>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                <label for="service">Services:</label>
+                <select name="service" id="service">
+                    <option value="">Gaming</option>
+                    <option value="">Programming</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </section>
+    <footer class="copyright">
+        <p>&copy;2020 Nadeem Wali</p>
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
