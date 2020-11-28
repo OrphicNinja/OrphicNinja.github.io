@@ -1,34 +1,35 @@
 .controller.ds4 {
-    background: url(https://i.imgur.com/knUp59O.gif) repeat center;
+    background: url("https://i.imgur.com/knUp59O.gif") repeat center;
 }
 
 .ds4 .face {
-    background-image: url(https://orphicninja.github.io/ZoottzControllerSkin/dpad.svg);
+    background-image: url("https://orphicninja.github.io/ZoottzControllerSkin/dpad.svg");
   }
 
 .ds4 .button {
-    background-image: url(https://orphicninja.github.io/ZoottzControllerSkin/face.svg);
+    background-image: url("https://orphicninja.github.io/ZoottzControllerSkin/face.svg");
   }
 
 .ds4 .trigger {
-    background-image: url(https://orphicninja.github.io/ZoottzControllerSkin/triggers.svg);
+    background-image: url("https://orphicninja.github.io/ZoottzControllerSkin/triggers.svg");
   }
 
 .ds4 .bumper {
-    background-image: url(https://orphicninja.github.io/ZoottzControllerSkin/bumper.svg);
+    background-image: url("https://orphicninja.github.io/ZoottzControllerSkin/bumper.svg");
   }
 
 .ds4 .touchpad.pressed {
-    background: url(https://orphicninja.github.io/ZoottzControllerSkin/touchpad.svg);}
+    background: url("https://orphicninja.github.io/ZoottzControllerSkin/touchpad.svg");
+}
 
 .ds4 .stick {
-    background-image: url(https://orphicninja.github.io/ZoottzControllerSkin/sticks.svg); 
+    background-image: url("https://orphicninja.github.io/ZoottzControllerSkin/sticks.svg"); 
  }
 
 .ds4 .disconnected {
-    background: url(https://orphicninja.github.io/ZoottzControllerSkin/disconnected.svg);
+    background: url("https://orphicninja.github.io/ZoottzControllerSkin/disconnected.svg");
   }
 
   .ds4 .back, .ds4 .start {
-    background: url(https://orphicninja.github.io/ZoottzControllerSkin/start.svg);
+    background: url("https://orphicninja.github.io/ZoottzControllerSkin/start.svg");
 }
