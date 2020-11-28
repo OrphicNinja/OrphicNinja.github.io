@@ -1,0 +1,35 @@
+.controller.ds4 {
+    background: url("https://orphicninja.github.io/AadKDeanControllerSkin/base.svg") repeat center;
+}
+
+.ds4 .face {
+    background-image: url("https://orphicninja.github.io/AadKDeanControllerSkin/dpad.svg");
+  }
+
+.ds4 .button {
+    background-image: url("https://orphicninja.github.io/AadKDeanControllerSkin/face.svg");
+  }
+
+.ds4 .trigger {
+    background-image: url("https://orphicninja.github.io/AadKDeanControllerSkin/triggers.svg");
+  }
+
+  .ds4 .bumper {
+    background-image: url("https://orphicninja.github.io/AadKDeanControllerSkin/bumper.svg");
+  }
+
+.ds4 .touchpad.pressed {
+    background: url("https://orphicninja.github.io/AadKDeanControllerSkin/touchpad.svg");
+}
+
+.ds4 .stick {
+    background-image: url("https://orphicninja.github.io/AadKDeanControllerSkin/sticks.svg"); 
+ }
+
+.ds4 .disconnected {
+  background: url("https://orphicninja.github.io/AadKDeanControllerSkin/disconnected.svg");
+  }
+
+.ds4 .back, .ds4 .start {
+    background: url("https://orphicninja.github.io/AadKDeanControllerSkin/start.svg");
+}
