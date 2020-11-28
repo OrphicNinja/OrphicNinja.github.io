@@ -3,25 +3,25 @@
 }
 
 .ds4 .face {
-    background-image: url(/ZoottzControllerSkin/dpad.svg);
+    background-image: url(https://orphicninja.github.io./ZoottzControllerSkin/ZoottzControllerSkin/dpad.svg);
 }
 
 .ds4 .button {
-    background-image: url(/ZoottzControllerSkin/face.svg);
+    background-image: url(https://orphicninja.github.io./ZoottzControllerSkin/ZoottzControllerSkin/face.svg);
 }
 
 .ds4 .trigger {
-    background-image: url(/ZoottzControllerSkin/triggers.svg);
+    background-image: url(https://orphicninja.github.io./ZoottzControllerSkin/ZoottzControllerSkin/triggers.svg);
 }
 
 .ds4 .bumper {
-    background-image: url(/ZoottzControllerSkin/bumper.svg);
+    background-image: url(https://orphicninja.github.io./ZoottzControllerSkin/ZoottzControllerSkin/bumper.svg);
 }
 
 .ds4 .touchpad.pressed {
-    background: url(/ZoottzControllerSkin/touchpad.svg) no-repeat center;
+    background: url(https://orphicninja.github.io./ZoottzControllerSkin/ZoottzControllerSkin/touchpad.svg) no-repeat center;
 }
 
 .ds4 .stick {
-    background-image: url(/ZoottzControllerSkin/sticks.svg);
+    background-image: url(https://orphicninja.github.io./ZoottzControllerSkin/ZoottzControllerSkin/sticks.svg);
 }
