@@ -14,7 +14,9 @@
     background-image: url("https://orphicninja.github.io/ZoottzControllerSkin/triggers.svg");
   }
 
-
+  .ds4 .bumper {
+    background-image: url("https://orphicninja.github.io/ZoottzControllerSkin/bumper.svg");
+  }
 
 .ds4 .touchpad.pressed {
     background: url("https://orphicninja.github.io/ZoottzControllerSkin/touchpad.svg");
