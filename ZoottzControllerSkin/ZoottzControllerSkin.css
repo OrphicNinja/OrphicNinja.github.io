@@ -1,0 +1,27 @@
+.controller.ds4 {
+    background: url(https://i.imgur.com/knUp59O.gif) repeat center;
+}
+
+.ds4 .face {
+    background-image: url(/ZoottzControllerSkin/dpad.svg);
+}
+
+.ds4 .button {
+    background-image: url(/ZoottzControllerSkin/face.svg);
+}
+
+.ds4 .trigger {
+    background-image: url(/ZoottzControllerSkin/triggers.svg);
+}
+
+.ds4 .bumper {
+    background-image: url(/ZoottzControllerSkin/bumper.svg);
+}
+
+.ds4 .touchpad.pressed {
+    background: url(/ZoottzControllerSkin/touchpad.svg) no-repeat center;
+}
+
+.ds4 .stick {
+    background-image: url(/ZoottzControllerSkin/sticks.svg);
+}
