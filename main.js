@@ -2,6 +2,16 @@ $(document).ready(function () {
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
         $('.top-nav').toggleClass('open');
+        if ($('.bar').css("background-color") == "rgb(223, 30, 123)"){
+            $(".bar").css("background-color", "black")
+        }  else {
+            $(".bar").css("background-color", "rgb(223, 30, 123)")
+        }
+        if ($('.logo').css("opacity") == "1"){
+            $(".logo").css("opacity", "0")
+        }  else {
+            $(".logo").css("opacity", "1")
+        }
     });
 
     $('.top-nav, .nav-link').on('click', function () {
