@@ -27,6 +27,12 @@ html, body, .page {
     left: 200%;
   }
 
+ #p4-premium, #p4-custom {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+  }
+
   
   #p1 { background: #640934; }
   #p2 { background: #0e7a0d; }
@@ -127,13 +133,15 @@ html, body, .page {
     width: 70%;
   }
 
-  .top-menu li {
+  #top-menu li {
     float: left;
     list-style: none;
     margin: 10px;
   }
   
-  .top-menu a {
+  #top-menu .button {
+    border: none;
+    outline: 0;
     display: block;
     padding: 12px;
     color: white;
@@ -143,7 +151,7 @@ html, body, .page {
     width: auto;
   }
 
-  .top-menu a:hover {
+  #top-menu .button:hover {
     opacity: 0.7;
   }
   
