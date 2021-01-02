@@ -1,0 +1,416 @@
+/*  Global  */
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+body {
+    background: rgb(27, 27, 27);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: none;
+    overflow: hidden;
+}
+
+/* Pre-loader */
+
+.no-js #loader { 
+    display: none;  
+}
+
+.js #loader { 
+    display: block; 
+    position: absolute; 
+    left: 100px; 
+    top: 0; 
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: white;
+}
+
+/*  Cursor  */
+
+.cursor {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes cursorAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim .5s forwards;
+    border: 1px solid #df247e;
+}
+
+/*  Menu  */
+
+.burger {
+    margin: 1%;
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+
+#burger-back {
+    background: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: 0.3s;
+}
+
+#menu-line1, #menu-line2, #menu-line3  {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    position: relative;
+    top: 35%;
+    left: 33%;
+}
+
+.change #menu-line1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change #menu-line2 {
+      opacity: 0;
+}
+  
+.change #menu-line3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.burger:hover #burger-back {
+    background: #df247e;
+}
+
+.burger:active #burger-back {
+    background: black;
+}
+
+.menu-page {
+    position: absolute;
+    top: 0;
+    right: -15vw;
+    width: 15vw;
+    height: 100vh;
+}
+
+#menu-back {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: -15vw;
+    width: 15vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+ul {
+    list-style: none;
+}
+
+#projects-button-hover {
+    position: absolute;
+    font-size: 32px;
+    top: 25vh;
+    left: 1vw;
+    color: #df247e;
+    z-index: 2;
+}
+
+#projects-button {
+    position: absolute;
+    font-size: 32px;
+    top: 25vh;
+    left: 1vw;
+    color: rgb(27, 27, 27);
+    -webkit-text-stroke: 1px white;
+}
+
+#contact-button-hover {
+    position: absolute;
+    font-size: 32px;
+    top: 40vh;
+    left: 1vw;
+    color: #df247e;
+    z-index: 2;
+}
+
+#contact-button {
+    position: absolute;
+    font-size: 32px;
+    top: 40vh;
+    left: 1vw;
+    color: rgb(27, 27, 27);
+    -webkit-text-stroke: 1px white;
+}
+
+#contact-email {
+    position: absolute;
+    font-size: 16px;
+    top: 90vh;
+    left: 1vw;
+    text-decoration: underline;
+}
+
+#contact-email:hover {
+    cursor: pointer;
+}
+
+#contact-number {
+    position: absolute;
+    font-size: 16px;
+    left: 1vw;
+    top: 95vh;
+    text-decoration: underline;
+}
+
+#contact-number:hover {
+    cursor: pointer;
+}
+
+#facebook-button {
+    border-radius: 50%;
+    border: 1px white solid;
+    width: 32px;
+    height: 32px;
+    top: 94vh;
+    right: 1vw;
+    position: absolute;
+    z-index: 2;
+}
+
+#facebook-button:hover {
+    cursor: pointer;
+    border: none;
+    background: #df247e;
+}
+
+#facebook-button:hover > i {
+    color: black;
+}
+
+#instagram-button {
+    border-radius: 50%;
+    border: 1px white solid;
+    width: 32px;
+    height: 32px;
+    top: 94vh;
+    right: 3.25vw;
+    position: absolute;
+    z-index: 2;
+}
+
+#instagram-button:hover {
+    cursor: pointer;
+    border: none;
+    background: #df247e;
+}
+
+#instagram-button:hover > i {
+    color: black;
+}
+
+li i {
+    position: relative;
+    top: 25%;
+    left: 30%;
+}
+
+/*  Index  */
+
+#index #title-hover {
+    font-size: 15vh;
+    text-transform: capitalize;
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+    color: #df247e;
+    z-index: 2;
+}
+
+#index #title {
+    font-size: 15vh;
+    text-transform: capitalize;
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+    color: rgb(27, 27, 27);
+    -webkit-text-stroke: 1px white;
+}
+
+#index #sub-title {
+    font-size: 5vh;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50vh;
+    left: 15vw;
+}
+
+#index h3 {
+    font-size: 2vh;
+    text-transform: capitalize;
+    position: absolute;
+    top: 63vh;
+    left: 15vw;
+}
+
+#index #my-picture {
+    position: absolute;
+    top: 35vh;
+    left: 25vw;
+    opacity: 0;
+    box-shadow: 100px 100px 50px black;
+    animation: rotatePicture;
+    animation-duration: 120s;
+    clip-path: inset(0 0 0 0 round 5%);
+    z-index: -1;
+}
+
+@keyframes rotatePicture {
+    0% {transform: rotate(0)}
+    50% {transform: rotate(10deg)}
+    100% {transform: rotate(-10deg)}
+}
+
+/* Projects */
+
+.page #projects {
+    width: 100vw;
+    height: 200vh;
+}
+
+#projects #title {
+    font-size: 15vh;
+    text-transform: capitalize;
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+}
+
+#projects #sub-title {
+    font-size: 5vh;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50vh;
+    left: 15vw;
+}
+
+#projects h3 {
+    font-size: 2vh;
+    text-transform: capitalize;
+    position: absolute;
+    top: 63vh;
+    left: 15vw;
+}
+
+#projects .cards {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100vh;
+    left: 0;
+}
+
+#projects .cards li {
+    position: relative;
+    left: 5vw;
+}
+
+#projects .card {
+    width: 1704px;
+    height: 480px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+#projects .card1 img {
+    float: left;;
+    flex: 50%;
+}
+
+#projects .card1 .card-information {
+    float: right;;
+    flex: 50%;
+}
+
+#projects .card-information h1{
+    text-align: center;
+    font-size: 10vh;
+}
+
+#projects .card-information p{
+    text-align: center;
+    font-size: 3vh;
+}
+
+#projects .card-information .view-button {
+    
+}
+
+/*  Contact  */
+
+#contact #title {
+    font-size: 15vh;
+    text-transform: capitalize;
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+    color: white;
+}
+
+#contact #sub-title {
+    font-size: 5vh;
+    text-transform: capitalize;
+    position: absolute;
+    top: 60vh;
+    left: 15vw;
+}
+
+
+/*  Footer  */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 92.5%;
+    left: 50vw;
+}

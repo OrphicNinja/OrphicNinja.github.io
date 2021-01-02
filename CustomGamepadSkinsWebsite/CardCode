@@ -1,7 +1,0 @@
-<div class="card" id="my-custom-xbox-one">
-                    <video src="videos/MyCustom.webm" type="video/webm" width="100%" autoplay loop></video>
-                    <h1>My Custom Skin</h1>
-                    <p class="price">$19.99</p>
-                    <p>The custom skin I created to use in my own <a href="https://twitch.tv/orphicninja">Twitch</a>.</p>
-                    <p><button onclick="location.href = 'https://gamepadviewer.com/?p=1&s=1&editcss=https%3A%2F%2Forphicninja.github.io.%2FOrphicNinjaControllerSkin%2FOrphicNinjaControllerSkin.css'">VIEW</button></p>
-                  </div>
