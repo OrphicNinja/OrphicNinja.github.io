@@ -1,35 +1,35 @@
 .controller.ds4 {
-    background: url("https://nadeemwali.com/AadKDeanControllerSkin/base.svg") repeat center;
+    background: url("http://nadeemwali.com/AadKDeanControllerSkin/base.svg") repeat center;
 }
 
 .ds4 .face {
-    background-image: url("https://nadeemwali.com/AadKDeanControllerSkin/dpad.svg");
+    background-image: url("http://nadeemwali.com/AadKDeanControllerSkin/dpad.svg");
   }
 
 .ds4 .button {
-    background-image: url("https://nadeemwali.com/AadKDeanControllerSkin/face.svg");
+    background-image: url("http://nadeemwali.com/AadKDeanControllerSkin/face.svg");
   }
 
 .ds4 .trigger {
-    background-image: url("https://nadeemwali.com/AadKDeanControllerSkin/triggers.svg");
+    background-image: url("http://nadeemwali.com/AadKDeanControllerSkin/triggers.svg");
   }
 
 .ds4 .bumper {
-    background-image: url("https://nadeemwali.com/AadKDeanControllerSkin/bumper.svg");
+    background-image: url("http://nadeemwali.com/AadKDeanControllerSkin/bumper.svg");
   }
 
 .ds4 .touchpad.pressed {
-    background: url("https://nadeemwali.com/AadKDeanControllerSkin/touchpad.svg");
+    background: url("http://nadeemwali.com/AadKDeanControllerSkin/touchpad.svg");
 }
 
 .ds4 .stick {
-    background-image: url("https://nadeemwali.com/AadKDeanControllerSkin/sticks.svg"); 
+    background-image: url("http://nadeemwali.com/AadKDeanControllerSkin/sticks.svg"); 
  }
 
 .ds4 .disconnected {
-  background: url("https://nadeemwali.com/AadKDeanControllerSkin/disconnected.svg");
+  background: url("http://nadeemwali.com/AadKDeanControllerSkin/disconnected.svg");
   }
 
 .ds4 .back, .ds4 .start {
-    background: url("https://nadeemwali.com/AadKDeanControllerSkin/start.svg");
+    background: url("http://nadeemwali.com/AadKDeanControllerSkin/start.svg");
 }
