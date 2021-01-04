@@ -17,12 +17,12 @@ var cursorRadius;
 function initialize() {
     customizeCursor(50);
 
-    if ($('#projects').length > 0) {
-        document.querySelector('body').style.overflow = null;
-        document.querySelector('body').style.overflowX = "hidden";
+    if ($('.scroll').length > 0) {
+        document.querySelector('body').style.overflowY = 'visible'
+        document.querySelector('footer').style.position = 'fixed'
     } else {
-        document.querySelector('body').style.overflow = "hidden";
-        document.querySelector('body').style.overflowX = null;
+        document.querySelector('body').style.overflowY = 'hidden'
+        document.querySelector('footer').style.position = 'absolute'
     }
 }
 
@@ -47,6 +47,7 @@ document.addEventListener('mousemove', e => {
     }
 })
 
+
 document.addEventListener('click', () => {
     cursor.classList.add("expand");
 
@@ -62,9 +63,18 @@ function customizeCursor(radius, color) {
     cursor.style.background = color;
 }
 
+
+function homeButtonEnter() {
+    customizeCursor(75, 'white');
+}
+
+function homeButtonLeave() {
+    customizeCursor(50, null);
+}
+
 function burgerMenuClick(burgerBack) {
     if (burgerBack.classList.contains("change") === false){
-        $('.menu-page, #menu-back').animate({right: 0}, 200);
+        $('.menu-page, #menu-back').animate({right: 1}, 200);
         document.querySelector('body').style.position = "fixed";
         scroll(0, 0);
         burgerBack.classList.toggle("change");

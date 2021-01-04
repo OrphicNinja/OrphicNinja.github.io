@@ -15,7 +15,17 @@ body {
     left: 0;
     right: 0;
     cursor: none;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-X: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 1vw;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
 }
 
 /* Pre-loader */
@@ -74,6 +84,36 @@ body {
 }
 
 /*  Menu  */
+
+.home-button {
+    margin: 1%;
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+
+#home-button-back {
+    background: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.fa-home {
+    font-size: 35px;
+    color: black;
+    position: relative;
+    top: 30%;
+    left: 30%;
+}
+
+.home-button:hover #home-button-back {
+    background: #df247e;
+}
+
+.home-button:active #home-button-back {
+    background: black;
+}
 
 .burger {
     margin: 1%;
@@ -345,11 +385,12 @@ li i {
     width: 100vw;
     height: 100vh;
     top: 100vh;
-    left: 0;
+    left: 15vw;
 }
 
 #projects .cards li {
     position: relative;
+    margin: 5% 0;
     left: 5vw;
 }
 
@@ -361,27 +402,45 @@ li i {
 }
 
 #projects .card1 img {
-    float: left;;
+    float: left;
     flex: 50%;
 }
 
 #projects .card1 .card-information {
-    float: right;;
+    float: right;
+    flex: 50%;
+}
+
+#projects .card2 img {
+    float: right;
+    flex: 50%;
+}
+
+#projects .card2 .card-information {
+    float: left;
     flex: 50%;
 }
 
 #projects .card-information h1{
     text-align: center;
-    font-size: 10vh;
+    font-size: 5vh;
 }
 
 #projects .card-information p{
     text-align: center;
-    font-size: 3vh;
+    font-size: 2.5vh;
 }
 
 #projects .card-information .view-button {
-    
+    padding: 1%;
+    font-size: 2.5vh;
+    text-decoration: none;
+    position: relative;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    left: 42.5%;
+    bottom: -25%;
 }
 
 /*  Contact  */
