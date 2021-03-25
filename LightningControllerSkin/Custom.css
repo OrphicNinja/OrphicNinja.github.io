@@ -18,14 +18,6 @@
     background-repeat: no-repeat,no-repeat;
 }
 
-[class~=controller][class~=custom] {
-    -webkit-animation-delay: 0s;
-}
-
-[class~=controller][class~=custom] {
-    -webkit-animation-fill-mode: forwards;
-}
-
 [class~=custom][class~=disconnected] {
     background: url(''); 
 }

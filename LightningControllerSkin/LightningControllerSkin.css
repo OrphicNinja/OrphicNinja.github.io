@@ -148,17 +148,17 @@ background-position: 0 -70px;
 
 .ds5 .abxy {
     position: absolute;
-    width: 170px;
-    height: 171px;
+    width: 131px;
+    height: 131px;
     top: 159px;
     left: 567px;
 }
 
 .ds5 .button {
     position: absolute;
-    width: 55px;
-    height: 55px;
-    background: url(face.svg);
+    width: 43px;
+    height: 43px;
+    background: url("");
 }
 
 .ds5 .button.pressed {
