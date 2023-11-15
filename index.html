@@ -4,73 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Nadeem Wali | WEB DEVELOPER</title>
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Nadeem Wali - Portfolio</title>
 </head>
 <body>
-    <div class="se-pre-con"></div>
-    <div class="cursor"></div>
-    
-    <section class="menu">
-        <a href="index.html"><div class="home-button">
-            <div id="home-button-back" onmouseenter="homeButtonEnter()" onmouseleave="homeButtonLeave()">
-                <i class="fas fa-home"></i>
-            </div>
-        </div></a>
-
-        <div class="burger">
-            <div class="" id="burger-back" onclick="burgerMenuClick(this)" onmouseenter="burgerMenuEnter()" onmouseleave="burgerMenuLeave()">
-                <div id="menu-line1"></div>
-                <div id="menu-line2"></div>
-                <div id="menu-line3"></div>
-            </div>
-        </div>
-
-        <div id="menu-back"></div>
-        <div class="menu-page" onmouseenter="menuPageEnter()" onmouseleave="menuPageLeave()">
-            <ul>
-                <a href="projects.html"><li>
-                    <h1 id="projects-button">PROJECTS</h1>
-                    <h1 id="projects-button-hover" onmouseenter="projectsHoverEnter()" onmouseleave="projectsHoverLeave()">PROJECTS</h1>
-                </li></a>
-                <a href="contact.html"><li >
-                    <h1 id="contact-button">CONTACT</h1>
-                    <h1 id="contact-button-hover" onmouseenter="contactHoverEnter()" onmouseleave="contactHoverLeave()">CONTACT</h1>
-                </li></a>
-                <a href="mailto:contact@nadeemwali.com"><li>
-                    <h1 id="contact-email">contact@nadeemwali.com</h1>
-                </li></a>
-                <a href="tel:07707348844"><li>
-                    <h1 id="contact-number">07707348844</h1>
-                </li></a>
-                <a href="https://www.facebook.com/NadeemWaliDev/" target="_blank"><li>
-                    <div id="facebook-button" onmouseenter="customizeCursor(25, 'white')" onmouseleave="customizeCursor(25, null)">
-                        <i class="fab fa-facebook-f"></i>
-                    </div>
-                </li></a>
-                <a href="https://www.instagram.com/Nadeem.webdev/" target="_blank"><li>
-                    <div id="instagram-button" onmouseenter="customizeCursor(25, 'white')" onmouseleave="customizeCursor(25, null)">
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                </li></a>
+    <nav id="desktop-nav">
+        <div class="logo">NADEEM WALI</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </section>
-
-    <section class="page" id="index">
-        <div class="title">
-            <h1 id="title">NADEEM WALI</h1>
-            <h1 id="title-hover" onmouseenter="titleHoverEnter()" onmouseleave="titleHoverLeave()">NADEEM WALI</h1>
-            <img width="1080" src="http://placebeard.it/1280/720" alt="my-picture" id="my-picture">
-            <h2 id="sub-title">I make your gorgeous website designs <br> become more than just DESIGNS</h2>
-            <h3>and other things too!</h3>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">NADEEM WALI</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__text">
+            <p class="section__text__p1">Hello There, I'm</p>
+            <h1 class="title">Nadeem Wali</h1>
+            <p class="section__text__p2">Games Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">View CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/nadeem-wali-709707277/'">
+                <img src="./assets/itchio.png" alt="My ItchIo Profile" class="icon" onclick="location.href='https://nadzw.itch.io'">
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/OrphicNinja'">
+            </div>
         </div>
     </section>
-
-    <footer>This website is just a project by Nadeem Wali to test abilities in web development</footer>
-
-    <script src="https://kit.fontawesome.com/54edcdb169.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <script src="app.js"></script>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Nadeem Wali About Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="static-icon">
+                        <h3>Experience</h3>
+                        <p>Unity c# Development: <br> 3+ Years</p>
+                        <p>Unreal Engine Development: <br> 1 Year</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="static-icon">
+                        <h3>Education</h3>
+                        <p>Currently studying Games Design and Development <br> at Sheffield Hallam University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hi! I'm Nadeem, a game programmer and designer, and I've been making games since I was 13. 
+                        I am currently in my second year at Sheffield Hallam University studying Games Design and Development.
+                        I'm very passionate about games because they are a combination of creativity and technology, 
+                        and how games can be used to create unique and interactive experiences.
+                        <br><br> 
+                        Here you can see some of the projects I've had the opportunity of working on, 
+                        and some of the personal/hobby projects I've been experimenting with. I love learning new things and taking on challenges, 
+                        and I always like to put some extra time in perfecting my creations.
+                        <br><br>
+                        If you have any questions, please feel free to contact me :)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Explore My Recent</p>
+        <h1 class="title">Projects</h1>
+            <div class="projects-details-container">
+                <div class="about-containers">
+                    <div class="projects-details">
+                        <main class="card-content">
+                            <div class="card">
+                              <div class="content">
+                                <div class="tags-container">
+                                    <div class="tag">Unity</div>
+                                    <div class="tag">C#</div>
+                                    <div class="tag">Solo</div>
+                                    <div class="tag">GameJam</div>
+                                </div>
+                                <h2 class="card-title">Punch-Em-Up</h2>
+                                <p class="copy">My first ever published game. Play as a street brawler and make your way through a street littered with thugs.
+                                    Made in 72 hours for <a href="https://itch.io/jam/mini-jam-73-power" class="text-link">Mini Jam 73: Power</a></p>
+                                <div class="btn-container">
+                                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://nadzw.itch.io/punch-em-up'">Play Game</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="content">
+                                  <div class="tags-container">
+                                      <div class="tag">Unity</div>
+                                      <div class="tag">C#</div>
+                                      <div class="tag">Group</div>
+                                      <div class="tag">GameJam</div>
+                                  </div>
+                                  <h2 class="card-title">Deep Dive Dash</h2>
+                                  <p class="copy">A game where you have to get as low as possible in the deep ocean as a submarine. 
+                                      Made in a week for <a href="https://itch.io/jam/brackeys-10" class="text-link">Brackeys Game Jam 2023.2</a></p>
+                                  <div class="btn-container">
+                                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://nadzw.itch.io/deep-dive-dash'">Play Game</button>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="card">
+                              <div class="content">
+                                <div class="tags-container">
+                                    <div class="tag">Unity</div>
+                                    <div class="tag">C#</div>
+                                    <div class="tag">Group</div>
+                                    <div class="tag">GameJam</div>
+                                </div>
+                                <h2 class="card-title">Starborne</h2>
+                                <p class="copy">A GameBoy themed multidirectional bullet hell. 
+                                    Made in 10 days for <a href="https://itch.io/jam/gbjam-11" class="text-link">GBJam 11</a></p>
+                                <div class="btn-container">
+                                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://nadzw.itch.io/starborne'">Play Game</button>
+                                </div>
+                              </div>
+                            </div>
+                          </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="static-icon contact-icon"">
+                <p><a href="mailto:nadeem.wali.2001@gmail.com">nadeem.wali.2001@gmail.com</p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="static-icon contact-icon"">
+                <p><a href="https://www.linkedin.com/in/nadeem-wali-709707277/">LinkedIn</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <p>Copyright &#169; 2023 Nadeem Wali. All rights reserved</p>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
