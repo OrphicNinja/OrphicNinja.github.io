@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../mediaqueries.css">
+    <title>Nadeem Wali - Portfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">NADEEM WALI</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#projects">Projects</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">NADEEM WALI</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="/" onclick="toggleMenu()">About</a></li>
+                <li><a href="/index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="/index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="about">
+        <p class="section__text__p1">Modding</p>
+        <h1 class="title">PAYDAY 3</h1>
+        <div class="section-container">
+            <div class="section__pic-container ">
+                <img src="../assets/payday3-heisters.png"  alt="Payday 3 Heisters" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        With the release of Payday 3, I quickly became interested in modifying the game to add features and mechanics that would personalise the game for myself.
+                        Luckily Payday 3 runs on Unreal Engine, which I have had previous experience with. This lead me to joining in with the modding community, helping with 
+                        reverse engineering specific functions and replicating them with our own mods. 
+                        <br><br> 
+                        Overall this has been a great experience with working with an actual published game and I have picked up a lot of skills from working with the in-game functions
+                        and have learned a lot about how games structure their code and assets.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="/assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./payday3modding.html#phone'">
+    </section>
+    <section id="phone">
+        <p class="section__text__p1">The making of the</p>
+        <h1 class="title">Animated Phone Screen</h1>
+        <div class="section-container">
+            <div class="section__pic-container ">
+                <img src="../assets/payday3-phone.png"  alt="Payday 3 phone screen mods" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        One of the first mods I released was the <a class="text-link" href="https://modworkshop.net/mod/44826">Animated Subway Surfer Phone Screen</a>,
+                        which replaced the usual phone screen texture with an animated version of the phone, showing Subway Surfer gameplay instead. It initially started of as a joke/gimmick
+                        mod but it became a way for me to learn about making logic mods.
+                        <br><br> 
+                        After showing a few other players the mod and having many mod makers asking how I made it, I realised that having an animated phone screen was 
+                        a feature that many players desired. So I took on the challenge of creating a base template/framework for other mod makers to easily use to
+                        develop their own animated phone screen replacements. This template allowed for greater customisation and personalisation to the game.
+                        <br><br>
+                        This lead to me developing the <a class="text-link" href="https://modworkshop.net/mod/44827?tab=description">Animated Phone Screen Template and Guide</a>,
+                         which taught people how to make their own animated phone screen mods. The guide featured a worded instruction page along with a voiced video guide. This spawned
+                        a wave of animated phone screen mods populating the mod workshops.
+                        <br><br>
+                        There was a also few other mods that spawned from my animation logic, like the <a class="text-link" href="https://modworkshop.net/mod/45222">Starry Night Animated Gloves</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="/assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./payday3modding.html#ui'">
+    </section>
+    <section id="ui">
+        <p class="section__text__p1">Working on</p>
+        <h1 class="title">UI Elements</h1>
+        <br><br>
+        <div class="section-container">
+            <div class="section__pic-container ">
+                <img src="../assets/payday3-ui.png"  alt="Payday 3 phone screen mods" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        While working on my own mods, I had the opportunity to work with other mod makers and helped with the creation of a few different mods. One of the mods I got to contribute to was the 
+                        <a class="text-link" href="https://modworkshop.net/mod/44921?tab=description">Challenge Notifications from Sanic</a>, which displayed an on screen notification upon completion
+                        of challenges mid heist. I worked on the UI for this mod, designing a concept for how the notification will look on the HUD and creating the final UI assets used in the widgets. I tried to
+                        keep the UI elements in theme with how the default HUD looked.
+                        <br><br>
+                        <img class="preview-image" src="/assets/payday3-ui-concept.png" alt="Ui concept made for challenge notifications">
+                        <br><br>
+                        Working with the same mod maker, we developed a proof of concept for a custom weapon skin framework. The idea was that people would be able to create their own skins for any weapon they would like.
+                        I worked on the menu for this mod and had to learn how to hook widgets and UI elements into the main menu widget. During the development, I learned the process of dynamically spawning UI elements
+                        and how the menu in games work. Although, this mod was never finished or published anywhere, it was a great learning experience with working with other developers and comunicating. 
+                        
+                        Here is how the menu turned out:
+                        <br><br>
+                    </p>
+                    <iframe class="preview-video" width="640" height="360" src="https://www.youtube.com/embed/jGOu9gHIrWE?si=HrGx4d0rQxYAJHbd?autoplay=1" allow="autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <img src="/assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./payday3modding.html#hud'">
+    </section>
+    <section id="hud">
+        <p class="section__text__p1">Creating a</p>
+        <h1 class="title">Minimalistic HUD</h1>
+        <div class="section-container">
+            <div class="section__pic-container ">
+                <img src="../assets/payday3-hud.png"  alt="Payday 3 phone screen mods" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        As my current modding project, I am working on redesigning the player HUD with a simplified minimalistic version. This modification is still currently in progress
+                        and aims to be the first released full customised HUD mod. To get the UI elements working, I have had to read through the Payday 3 c++ and UE4 functions and variables to see
+                        where the relevant infomation that I need is stored. 
+                        <br><br>
+                        As of the moment the client's health, armor, overkill progress, ammo and downed count have been displayed on the HUD. Along with that, the AI crew health is also working as intended.
+                        I am now working on getting the online crew that have joined the sessions and displaying their statistics on the HUD.  
+                        <br><br>
+                        Here is the HUD in its current state, show in working game:
+                        <br><br>
+                    </p>
+                        <iframe class="preview-video" width="640" height="360" src="https://www.youtube.com/embed/XSaMjUUH3KE?autoplay=1" allow="autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="/index.html#">Home</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#projects">Projects</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <p>Copyright &#169; 2023 Nadeem Wali. All rights reserved</p>
+        </nav>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

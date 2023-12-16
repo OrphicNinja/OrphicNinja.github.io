@@ -47,6 +47,15 @@
     .about-containers {
         margin-top: 0;
     }
+
+    .preview-video {
+        width: 640px;
+        height: 360px;
+    }
+
+    .preview-image {
+        width: 640px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -118,6 +127,15 @@
 
     .card {
         height: 263px;
+    }
+
+    .preview-video {
+        width: 320px;
+        height: 180px;
+    }
+
+    .preview-image {
+        width: 320px;
     }
 }
 

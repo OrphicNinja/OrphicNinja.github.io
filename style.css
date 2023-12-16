@@ -297,7 +297,7 @@ section {
 }
 
 .arrow {
-    position: absolute;
+    position: relative;
     right: -5rem;
     bottom: 2.5rem;
 }
@@ -325,6 +325,17 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 4rem;
+}
+
+.preview-video {
+    width: 640px;
+    display: block;
+    margin: 0 auto;
+}
+
+.preview-image {
+    display: block;
+    margin: 0 auto;
 }
 
 /* Projects Section */
@@ -439,6 +450,13 @@ section {
 
 .card:nth-child(3):before {
     background-image: url(./assets/project-3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.card:nth-child(4):before {
+    background-image: url(./assets/project-4.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
